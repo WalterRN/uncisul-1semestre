@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!--Diretiva de que o documento é html5-->
+<html>
+    <head> <!--cabeçalho documento-->
+        <title> Página inicial - Avanço da computação</title>
+        <meta charset="utf-8">
+    </head>
+    <body> <!--conteúdo do documento - corpo-->
+        <section> <!--Cria uma sessão, é uma área de conteúdo-->
+            <header><!--Cabeçalho do conteúdo-->
+                <nave><!--Área dos links - navegação-->
+                    <ul><!--Lista não ordenada-->
+                        <li><!--item da lista-->
+                            <!-- a= inseri link para recurso-->
+                            <a href="INDEX.html" target="_blank"> Home</a>
+                        </li>
+                        <li>
+                            <a href="utrassom.html">Ultrassom</a>
+                        </li>
+                        <li>
+                            <a href="gravacao.html">Gravação de exame</a>
+                        </li>
+                        <li>
+                            <a href="machine.html">Machine Learning</a>
+                        </li>
+                        <li>
+                            <a href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </nave>
+            </header>
+            <section><!--Conteúdo Principal da Página-->
+                <header><!--cabeçalho do conteúdo principal-->
+                    <h1>Contato</h1>
+                </header>
+                <article><!--Conteúdo independente-->
+                  <form name="exemplo" method="POST" action=""><!--insere formulário-->
+                    <fieldset><!--agrupa elementos-->
+                        <legend>Dados pessoais:</legend>
+                        <!--definindo elementos do formulario-->
+                        <label for="nome">Nome: </label>
+                        <!--required - torna o campo obrigatório-->
+                        <input type="text" name="nome" id="nome" required><br> 
+                        <label for="email">E-mail: </label>
+                        <input type="email" name="email" id="email" placeholder="email@email.com"><br>
+                        <label for="cv">Portfólio: </label> </label>
+                        <input type="url" name="url" id="cv"><br>
+                        <label for="estado"> Estado Civil: </label><br>
+                        <input type="radio" name="estado" id="casado" value="casado">
+                        <label for="casado">Casado</label><br>
+                        <input type="radio" name="estado" id="solteiro" value="solteiro">
+                        <label for="solteiro">Solteiro</label><br>
+                        <input type="radio" name="estado" id="viuvo" value="viuvo">
+                        <label for="viuvo">Viúvo</label><br>
+                        <label for="assuntos">Assuntos: </label><br> <!--colocar label depois no checkbox-->
+                        <input type="checkbox" name="futebol" id="futebol" value="futebol">Futebol<br>                  
+                        <input type="checkbox" name="economia" id="economia" value="economia">Economia<br>                  
+                        <input type="checkbox" name="tecnologia" id="tecnologia" value="tecnologia">Tecnologia<br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Dados de formação:</legend>
+                        <select name="formacao" id="formacao">
+                            <optgroup label="Bacharelados">
+                                <option>Ciência da Computação</option>
+                                <option>Sistema de informação</option>
+                            </optgroup>    
+                            <optgroup label="Tecnológicos">
+                                <option>ADS</option>
+                                <option>GTI</option>
+                            </optgroup>   
+                        </select>
+                    </fieldset>
+                    <textarea rows="10" cols="50"></textarea><br>                     
+                        <input type="submit" value="Enviar">                                
+                  </form>                            
+                </article>              
+            </section>
+            <footer><!--Rodapé da página-->
+                    Walter Rutkowski Neto - RGM: 258040-14
+            </footer>
+        </section>
+    </body>
+
+</html>
